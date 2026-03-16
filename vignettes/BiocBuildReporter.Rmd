@@ -63,7 +63,7 @@ parquet files read by this package for analysis.
 ```{r, install, eval = FALSE}
 if (!"BiocManager" %in% rownames(installed.packages()))
      install.packages("BiocManager")
-BiocManager::install("BiocFileCache", dependencies=TRUE)
+BiocManager::install("BiocBuildReporter", dependencies=TRUE)
 ```
 
 After the package is installed, it can be loaded into _R_ workspace by
