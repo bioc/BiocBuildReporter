@@ -77,7 +77,7 @@ get_bbs_table <- function(tblname=c("build_summary", "info",
     stopifnot(is.logical(useLocal), length(useLocal)==1L,
               is.logical(updateLocal), length(updateLocal)==1L)
     
-    if (exists(tblname, envir = .bbs_cache)) {
+    if (exists(tblname, envir = .bbs_cache) & !updateLocal & useLocal) {
         message(sprintf("Using cached table '%s'", tblname))
         return(get(tblname, envir = .bbs_cache))
     }  
