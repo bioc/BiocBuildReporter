@@ -1,7 +1,7 @@
 Package: BiocBuildReporter
 Type: Package
 Title: Functions to process a bioconductor build report database
-Version: 1.0.0
+Version: 1.0.1
 Description: This package reads remote parquet files that have processed Bioconductor build report logs. Users may query the tables directly for specific information or use pre-defined helper functions for common queries. The logs processed are from https://bioconductor.org/checkResults/. In the future we will extend this package out to include processing of r-universe logs.
 Depends: R (>= 4.6.0)
 Imports: arrow, dplyr, BiocFileCache
